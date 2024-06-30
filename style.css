@@ -1,0 +1,148 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Heavitas;
+    src: url(./fonts/heavitas/Heavitas.ttf);
+}
+
+@font-face {
+    font-family: hero;
+    src: url(./fonts/hero-2-cufonfonts/HeroLight-Regular.otf);
+}
+
+.content-left{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    position: absolute;
+    height: 100vh;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;        -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* text-styling */
+.title{
+    font-size: 40px;
+    font-family: Heavitas;
+    font-weight: 20;
+    padding: 10px;
+}
+.email{
+    font-size: 25px;
+    font-family: Hero;
+    padding: 20px 30px;
+
+}
+
+
+
+.description{
+    font-size: 20px;
+    width: 350px;
+    padding: 20px;
+}
+
+.nav-img{
+    padding: 10px 20px;
+}
+
+.links{
+    list-style-type: none;
+    margin: 10px;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.first{
+    height: 600px;
+    border: 1px white solid;
+}
+
+.first-content{
+    background-color: white;
+    transition: background 1s ease
+}
+.second{
+    height: 600px;
+
+}
+.second-content{
+    background-color: rgb(117, 181, 255);
+    transition: background 1s ease
+}
+
+.third{
+    height: 600px;
+   
+}
+.third-content{
+    background-color: #b7b2da;
+}
+
+.fourth{
+    height: 600px;
+  
+}
+.fourth-content{
+    background-color: #eb1b2b;
+}
+.fifth{
+    height: 600px;
+  
+}
+
+.fifth-content{
+    background-color: #5097d0;
+}
