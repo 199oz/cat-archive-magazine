@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+
 }
 
 @font-face {
@@ -25,10 +26,9 @@
 body{
     height: 100vh;
     width: 100vw;
-    position: relative;        -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    position: relative;     
+
+
 }
 
 .top-left{
@@ -95,6 +95,11 @@ a{
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    background-color: white;
+    -webkit-transition: background-color 0.5s ease-out 200ms;
+    -moz-transition: background-color 0.5s ease-out 200ms;
+    -o-transition: background-color 0.5s ease-out 200ms;
+    transition: background-color 0.5s ease-out 200ms;
 }
 
 section{
@@ -105,44 +110,11 @@ section{
     height: 100vh;
 }
 
-.first{
-    height: 600px;
-    border: 1px white solid;
-}
-
-.first-content{
-    background-color: white;
-    transition: background 1s ease
-}
-.second{
-    height: 600px;
-
-}
-.second-content{
-    background-color: rgb(117, 181, 255);
-    transition: background 1s ease
-}
-
-.third{
-    height: 600px;
-   
-}
-.third-content{
-    background-color: #b7b2da;
-}
-
-.fourth{
-    height: 600px;
-  
-}
-.fourth-content{
-    background-color: #eb1b2b;
-}
+.first,
+.second,
+.third,
+.fourth,
 .fifth{
     height: 600px;
-  
-}
-
-.fifth-content{
-    background-color: #5097d0;
+    border: 1px white solid;
 }
